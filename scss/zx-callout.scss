@@ -1,0 +1,71 @@
+.zx-callout {
+  border-left: 3px solid transparent;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+
+  .zx-callout-close {
+    @include zx-transition(0.2s linear);
+
+    background: inherit;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: .5;
+    outline: none !important;
+    padding: .75rem 1.25rem;
+    position: relative;
+    right: -1.25rem;
+    text-shadow: 0 1px 0 #fff;
+    top: -.75rem;
+  }
+
+  .zx-callout-close:focus,
+  .zx-callout-close:hover {
+    color: #000;
+    opacity: .75;
+    text-decoration: none;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.zx-callout-danger {
+  border-color: #f96868;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #f96868;
+    text-transform: uppercase;
+  }
+}
+
+.zx-callout-info {
+  border-color: #48b0f7;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #48b0f7;
+    text-transform: uppercase;
+  }
+}
+
+.zx-callout-success {
+  border-color: #15c377;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #15c377;
+    text-transform: uppercase;
+  }
+}
+
+.zx-callout-warning {
+  border-color: #faa64b;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #faa64b;
+    text-transform: uppercase;
+  }
+}
